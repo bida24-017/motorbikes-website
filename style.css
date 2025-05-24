@@ -1,0 +1,634 @@
+ * {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* style the master page */
+
+/*define page size*/
+.master, .columns{
+    width: 100%;
+    border:1px solid turquoise;
+}
+
+div#divmaincontainer{
+    width: 90%;
+    margin: auto;
+}
+
+#header{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px 10px 0 0;
+
+   /* load the banner */
+    background-image: url("https://i.pinimg.com/736x/47/9c/3f/479c3fcf4994def753d9ef76659c0bae.jpg"); /* path has to be relative to css... go out of css folder once, then find the images folder*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h1#sitetitle{
+    color: rgb(223, 245, 26);
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+}
+
+#sitemotto{
+    color: rgb(0, 102, 255);
+    display: block;
+    text-align: left;
+    padding-left: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+/* Navigation Menu */
+#navmenu {
+  background-color: #d3f4be; /* Or any light color */
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+#ulmenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Optional: wrap on small screens */
+}
+
+#ulmenu li {
+  display: inline;
+}
+
+#ulmenu a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #ffdbac;
+  border: 2px solid #ff7b7b;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #d32f2f;
+  transition: all 0.3s ease;
+}
+
+#ulmenu a:hover {
+  background-color: #ff7b7b;
+  color: white;
+}
+
+div#divcolcontainer {
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+aside#sidebar {
+    width: 30%;
+    min-height: 60vh;
+    background-image: radial-gradient( #9fded8, #d6edd6);
+}
+
+fieldset#fldsetquicklinks, #fldsettrending, #fldsetadvert {
+    background: transparent;
+    border: solid 1px #080808;
+    border-radius: 5px;
+}
+
+
+
+ul#ulquicklinks li{
+    /*list-style-image: url('../images/favicon.JPG');*/
+    list-style-type: square;
+}#imgtrending {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    border: 1px solid turquoise;
+    border-radius: 0 0 10px 10px;
+    background-image: linear-gradient(90deg, rgb(221, 244, 242), rgb(225, 237, 140), rgb(207, 230, 207));
+}
+
+footer>
+p{
+    text-align: center;
+    font-size: 1em;
+    color: navy;
+}#socialmedia {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+aside#sidebar {
+    width: 30%;
+    min-height: 58vh;
+    background-image: radial-gradient( #ebf7f6, #e1f8e1);
+}
+
+section#maincontent{
+    width: 69.7%;
+    min-height: 58vh;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+#socialmedia a {
+  text-decoration: none;
+}
+
+#socialmedia img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+#socialmedia img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+/* ===== CONTACT PAGE STYLES ===== */
+
+#contact {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #d00000;
+}
+
+/* Form styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+#contact button {
+    padding: 12px;
+    background-color: #d00000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #a00000;
+}
+
+/* Contact info section */
+.contact-info {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-left: 5px solid #d00000;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    color: #222;
+}/* ===== REGISTER PAGE STYLES ===== */
+
+#register-section {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#register-section h2 {
+    text-align: center;
+    color: #d00000;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Input fields */
+#register-section form input {
+    width: 100%;
+    padding: 14px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#register-section form input:focus {
+    border-color: #d00000;
+    outline: none;
+}
+
+/* Button */
+#register-section form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #d00000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-section form button:hover {
+    background-color: #a30000;
+}
+
+/* Footer under form */
+#register-section .form-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#register-section .form-footer a {
+    color: #d00000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#register-section .form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    #register-section {
+        padding: 25px 20px;
+        margin: 40px 15px;
+    }
+}/* ===== LOGIN PAGE STYLES ===== */
+
+#login-section {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#login-section h2 {
+    text-align: center;
+    color: #d00000;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* Input fields */
+#login-section form input {
+    width: 100%;
+    padding: 14px 15px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#login-section form input:focus {
+    border-color: #d00000;
+    outline: none;
+}
+
+/* Button */
+#login-section form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #d00000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-section form button:hover {
+    background-color: #a30000;
+}
+
+/* Footer under form */
+#login-section .form-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#login-section .form-footer a {
+    color: #d00000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login-section .form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    #login-section {
+        margin: 40px 15px;
+        padding: 30px 20px;
+    }
+
+
+}/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #faf8f8fd; 
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e15757;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+/* Gallery section */
+#gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}/* Reset some basics */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure images scale correctly */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Common max-width for layout consistency */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+#header {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Sales Content */
+.sales-list {
+  display: flex;
+  flex-wrap: nowrap;       /* Prevent items from wrapping */
+  gap: 30px;
+  overflow-x: auto;        /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+/* Wrap sales list inside .container for consistent width */
+.sales-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+.sales-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+}
+
+
+/* Individual Sale Item */
+.sale-item {
+  flex: 0 0 auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.sale-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.sale-item h3 {
+  color: #e60000;
+  margin-bottom: 10px;
+}
+
+.sale-item p {
+  margin: 5px 0;
+}
+
+.sale-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+/* Footer */
+#footer {
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#socialmedia span {
+  margin: 0 8px;
+}
+
+#socialmedia img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}/* ==== Fix for navigation being unclickable (z-index layering issue) ==== */
+
+#navmenu {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; /* Ensure visibility */
+}
+
+/* Make sure the image in the sidebar doesn't overlap nav */
+#imgtrending {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+/* Sidebar should stay under nav, not overlap it */
+#sidebar {
+  position: relative;
+  z-index: 1;
+}
+
+#navmenu {
+  border: 2px solid red;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales - MotoMaverick</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>MotoMaverick</h1>
+        <p>Two Wheels, Endless Possibilities ...</p>
+    </header>
+    
+    <nav id="navmenu" class="master">
+      <ul id="ulmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div id="divcolcontainer">
+      
+      <aside id="sidebar" class="columns">
+        <fieldset id="fldsetquicklinks">
+
+        <div class="sales-list">
+          <div class="sale-item">
+            <h3>KTM Duke 200</h3>
+            <img src="https://i.pinimg.com/736x/24/eb/00/24eb007e190ec07ab68a9fc314fdfdac.jpg" alt="KTM Duke 200" width="250"/>
+            <p>Now at <strong>20% off</strong>! Offer valid until June 30th.</p>
+            <p>Was: <s>BWP 38,000</s> | Now: <strong>BWP 30,400</strong></p>
+          </div>
+
+          <div class="sale-item">
+            <h3>Yamaha R15 V4</h3>
+            <img src="https://i.pinimg.com/736x/36/c5/21/36c521f063575d2fdbf0b61f1524ab56.jpg" alt="Yamaha R15 V4" width="250"/>
+            <p>Exclusive Summer Discount: <strong>BWP 5,000 off</strong></p>
+            <p>Was: <s>BWP 45,000</s> | Now: <strong>BWP 40,000</strong></p>
+          </div>
+
+          <div class="sale-item">
+            <h3>Honda CRF 250L</h3>
+            <img src="https://i.pinimg.com/736x/bb/bb/71/bbbb7133fbe887d842a86c04ae177235.jpg" alt="Honda CRF 250L" width="250"/>
+            <p>Get a free helmet and jacket with every purchase!</p>
+            <p>Price: <strong>BWP 42,500</strong></p>
+          </div>
+          
+          <div class="sale-item">
+            <h3>Kawasaki Ninja ZX-10R</h3>
+            <img src="https://i.pinimg.com/736x/07/b9/1f/07b91f2b9ae4f0cfc80dfca0993a32a6.jpg" alt="Kawasaki Ninja ZX ZX-10R" width="250"/>
+            <p>Get a free helmet and jacket with every purchase!</p>
+            <p>Price: <strong>BWP 42,500</strong></p>
+           </div>
+
+
+          </div>
+      </section>
+
+    </div>
+
+    <footer id="footer" class="master">
+      <p id="pfooter">
+        Copyright@MotoMaverick <span id="currentyear"></span>
+      </p>
+
+      <div id="socialmedia">
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("currentyear").innerText = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>

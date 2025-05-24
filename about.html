@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MotoMaverick</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>MotoMaverick</h1>
+        <p>Two Wheels, Endless Possibilities ...</p>
+    </header>
+    
+    <nav id="navmenu" class="master">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="aboutus">
+        <h2>About MotoMaverick</h2>
+        <p>
+            Welcome to MotoMaverick – Botswana’s trusted name in motorcycles and biking culture.
+            Founded with passion for two wheels and the open road, we bring you the best in adventure, dual sport,
+            and performance motorcycles. Our goal is to connect every rider with their dream bike and provide a
+            community built around speed, safety, and freedom.
+        </p>
+
+        <p>
+            At MotoMaverick, we not only sell bikes, we live the lifestyle. From trail rides to city cruises,
+            we’re proud to support every kind of rider in Botswana and beyond.
+        </p>
+
+        <div class="team-section">
+            <h3>Our Team</h3>
+            <div class="team-member">
+                <h4>Thabo M. – Founder & CEO</h4>
+                <p>Visionary behind MotoMaverick with over 15 years in the motorcycle business.</p>
+            </div>
+            <div class="team-member">
+                <h4>Lesego P. – Sales Manager</h4>
+                <p>Expert in matching riders with their perfect bike and leading our showroom team.</p>
+            </div>
+            <div class="team-member">
+                <h4>Tumisang R. – Technician</h4>
+                <p>Certified mechanic ensuring all our bikes run at peak performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; MotoMaverick <span id="currentyear"></span></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("currentyear").innerText = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>

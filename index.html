@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoMaverick</title>
+    <style></style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <div id="divmaincontainer">
+
+        <header id="header" class="master">
+
+            <h1 id="sitetitle">MotoMaverick</h1>
+
+            <span id="sitemotto">Two Wheels, Endless Possibilities ...</span>
+
+        </header>
+
+<nav id="navmenu" class="master">
+
+            <ul id="ulmenu">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="about.html">About Us</a> </li>
+                <li> <a href="contact.html">Contact Us</a> </li>
+                <li> <a href="gallery.html">Gallery</a> </li>
+                <li> <a href="sales.html">Sales</a> </li>
+                <li> <a href="register.html">Register</a> </li>
+                <li> <a href="login.html">Login</a> </li>
+            </ul>
+
+        </nav> 
+        
+        <div id="divcolcontainer">
+            <aside id="sidebar" class="columns">
+
+
+
+                <fieldset id="fldsettrending">
+                    <legend>Trending Bike Of The Week</legend>
+
+                    <a href="#">
+                        <img id="imgtrending" src="https://i.pinimg.com/736x/ed/64/c1/ed64c191232473c14eaea4f8ccea84f7.jpg"  alt="Trending bike of the week" title="Weekly Trending Bike" onmousedown="alert('Thank you for viewing our weekly trending Bike')" tooltip="Trending Weekly Best Buy">
+                    </a>
+
+                </fieldset>
+
+                <fieldset id="fldsetadvert">
+                    <legend>Commercial Advert</legend>
+
+                    <div id="divadvert">
+
+                        <h3>To Advertise Here, Please Call 590 0000</h3>
+
+                    </div>
+
+                </fieldset>
+
+    
+            </aside>
+            
+            <section id="maincontent" class="columns">
+
+    <h2>Welcome to MotoMaverick!</h2>
+    <p>
+        <strong>Fuel your passion. Ignite your journey.</strong> At <strong>MotoMaverick</strong>, we don’t just sell motorcycles —
+        we celebrate the spirit of freedom, speed, and adventure.
+    </p>
+    <p>
+        Whether you're a seasoned rider or just gearing up for your first ride, we’ve got you covered with the hottest models,
+        unbeatable prices, expert insights, and a community that rides just as hard as you do.
+    </p>
+    <p>
+        🏍️ Browse our gallery, catch the latest sales, and ride with confidence — because at MotoMaverick,
+        every journey starts with two wheels and unlimited possibilities.
+    </p>
+
+</section>
+
+
+ </div>
+
+        <footer id="footer" class="master">
+
+            <p id="pfooter">
+                Copyright@MotoMaverick <span id="currentyear"></span>
+            </p>
+
+            <div id="socialmedia">
+                <span id="fb"> <a href="https://facebook.com" target="_blank"> <img src="images/socialmedia/fb.JPG"></a> </span>
+                <span id="yb"> <a href="https://youtube.com" target="_blank"> <img src="images/socialmedia/yt.JPG"></a> </span>
+                <span id="xx"> <a href="https://x.com" target="_blank"> <img src="images/socialmedia/xx.JPG"></a> </span>
+                <span id="wa"> <a href="https://web.whatsapp.com" target="_blank"> <img src="images/socialmedia/wa.JPG"></a> </span>
+            </div>
+
+        </footer>
+
+    </div>
+    
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Update current year
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Highlight active link
+    const links = document.querySelectorAll('#ulmenu a');
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        //console.log("DOM fully loaded and parsed");
+        var cyear = new Date().getFullYear();
+        document.querySelector("#currentyear").innerText = cyear;
+    });
+
+
+</script>
+
+
+
+
+
