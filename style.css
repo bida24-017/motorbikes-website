@@ -15,7 +15,7 @@ body{
 }
 
 div#divmaincontainer{
-    width: 90%;
+    width: 87%;
     margin: auto;
 }
 
@@ -75,17 +75,17 @@ h1#sitetitle{
 #ulmenu a {
   display: inline-block;
   padding: 10px 16px;
-  background-color: #ffdbac;
-  border: 2px solid #ff7b7b;
+  background-color: #7c7b82;
+  border: 2px solid #9ea7ee;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  color: #d32f2f;
+  color: #100404;
   transition: all 0.3s ease;
 }
 
 #ulmenu a:hover {
-  background-color: #ff7b7b;
+  background-color: #7d5cd1;
   color: white;
 }
 
@@ -130,15 +130,17 @@ footer{
     height: 200px;
     border: 1px solid turquoise;
     border-radius: 0 0 10px 10px;
-    background-image: linear-gradient(90deg, rgb(221, 244, 242), rgb(225, 237, 140), rgb(207, 230, 207));
+    background-image: linear-gradient(90deg, rgb(7, 7, 7), rgb(67, 67, 65), rgb(10, 10, 10));
 }
 
 footer>
 p{
     text-align: center;
     font-size: 1em;
-    color: navy;
-}#socialmedia {
+    color: rgb(213, 213, 224);
+}
+
+#socialmedia {
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -232,7 +234,7 @@ section#maincontent{
     margin-top: 40px;
     background-color: #f5f5f5;
     padding: 20px;
-    border-left: 5px solid #d00000;
+    border-left: 5px solid #283fd6;
     border-radius: 8px;
     font-size: 16px;
     line-height: 1.6;
@@ -255,7 +257,7 @@ section#maincontent{
 
 #register-section h2 {
     text-align: center;
-    color: #d00000;
+    color: #3609bd;
     margin-bottom: 25px;
     font-size: 28px;
 }
@@ -272,7 +274,7 @@ section#maincontent{
 }
 
 #register-section form input:focus {
-    border-color: #d00000;
+    border-color: #41a6d4;
     outline: none;
 }
 
@@ -280,7 +282,7 @@ section#maincontent{
 #register-section form button {
     width: 100%;
     padding: 14px;
-    background-color: #d00000;
+    background-color: #292ec8;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -291,7 +293,7 @@ section#maincontent{
 }
 
 #register-section form button:hover {
-    background-color: #a30000;
+    background-color: #1414b3;
 }
 
 /* Footer under form */
@@ -302,7 +304,7 @@ section#maincontent{
 }
 
 #register-section .form-footer a {
-    color: #d00000;
+    color: #3821cd;
     text-decoration: none;
     font-weight: bold;
 }
@@ -355,7 +357,7 @@ section#maincontent{
 #login-section form button {
     width: 100%;
     padding: 14px;
-    background-color: #d00000;
+    background-color: #350ccb;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -377,7 +379,7 @@ section#maincontent{
 }
 
 #login-section .form-footer a {
-    color: #d00000;
+    color: #3d5ecc;
     text-decoration: none;
     font-weight: bold;
 }
@@ -451,7 +453,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff4500;
+    color: #8a66c1;
 }
 
 /* Gallery section */
@@ -522,63 +524,6 @@ body {
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Sales Content */
-.sales-list {
-  display: flex;
-  flex-wrap: nowrap;       /* Prevent items from wrapping */
-  gap: 30px;
-  overflow-x: auto;        /* Enable horizontal scrolling */
-  scroll-behavior: smooth;
-  padding: 20px 0;
-}
-
-/* Wrap sales list inside .container for consistent width */
-.sales-wrapper {
-    overflow-x: auto;
-    width: 100%;
-    z-index: 3;
-}
-
-.sales-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-    padding: 20px 0;
-}
-
-
-/* Individual Sale Item */
-.sale-item {
-  flex: 0 0 auto;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 12px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
-}
-
-.sale-item img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.sale-item h3 {
-  color: #e60000;
-  margin-bottom: 10px;
-}
-
-.sale-item p {
-  margin: 5px 0;
-}
-
-.sale-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 

@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MotoMaverick</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - MotoMaverick</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>MotoMaverick</h1>
-        <p>Two Wheels, Endless Possibilities ...</p>
-    </header>
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-4">
+    <h1>MotoMaverick</h1>
+    <p class="mb-0">Two Wheels, Endless Possibilities ...</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contacts.html">Contact Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">Latest Models</a></li>
-            <li><a href="#">Sales</a></li>
-            <li><a href="#">Register</a></li>
-            <li><a href="login.html">Login</a></li>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MotoMaverick</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <section id="login-section">
-        <h2>User Login</h2>
-        <form action="#" method="post">
-            <input type="text" name="username" placeholder="Username or Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <div class="form-footer">
-            <p>Don't have an account? <a href="#">Register here</a></p>
+  <!-- Login Section -->
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="text-center mb-4">User Login</h2>
+            <form action="#" method="post">
+              <div class="mb-3">
+                <input type="text" name="username" class="form-control" placeholder="Username or Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+              </div>
+              <button type="submit" class="btn btn-dark w-100">Login</button>
+            </form>
+            <div class="text-center mt-3">
+              <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <p>&copy; MotoMaverick <span id="currentyear"></span></p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; MotoMaverick <span id="currentyear"></span></p>
+  </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("currentyear").innerText = new Date().getFullYear();
-        });
-    </script>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("currentyear").textContent = new Date().getFullYear();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
